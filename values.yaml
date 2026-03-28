@@ -66,6 +66,12 @@ tolerations: []
 
 affinity: {}
 
+## hostAliases allows adding entries to /etc/hosts inside the containers
+hostAliases: []
+#   - ip: "127.0.0.1"
+#     hostnames:
+#       - "example.com"
+
 act_runner:
   docker_host: "tcp://localhost:2376"
   storageclass: "default"
