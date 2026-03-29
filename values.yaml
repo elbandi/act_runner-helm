@@ -72,6 +72,12 @@ hostAliases: []
 #     hostnames:
 #       - "example.com"
 
+initContainers: []
+## Init containers to add to the Deployment
+# - name: init
+#   image: busybox
+#   command: []
+
 act_runner:
   docker_host: "tcp://localhost:2376"
   storageclass: "default"
